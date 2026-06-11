@@ -502,8 +502,23 @@
 
     /* ── RESPONSIVE ──────────────────────────────────────── */
     @media (max-width: 768px) {
-      .hero-grid { grid-template-columns: 1fr; }
-      .avatar-wrap { display: none; }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+      }
+      .avatar-wrap {
+        display: block;
+        margin: 2rem auto 0;
+        width: 180px;
+        height: 180px;
+      }
+      .avatar-ring,
+      .avatar,
+      .avatar-placeholder {
+        width: 100%;
+        height: 100%;
+      }
       .about-grid { grid-template-columns: 1fr; }
       .edu-card { grid-template-columns: auto 1fr; }
       .edu-score, .edu-score-label { display: none; }
